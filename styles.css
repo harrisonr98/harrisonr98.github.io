@@ -40,7 +40,7 @@ nav {
   .navbar-left {
     display: flex;
     align-items: center;
-    font-size: 18px; /* Adjust size as needed */
+    font-size: 16px; /* Adjust size as needed */
     font-weight: 500;
   }
   
@@ -113,7 +113,7 @@ align-items: center;
     background-color: #00000000; 
     color: #ffffff; 
     padding: 0.75rem 2rem;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
     border: 1px solid #ffffff;
     border-radius: 50px; 
@@ -197,7 +197,7 @@ nav, .hero {
     }
 
     #hamburger-menu {
-        font-size: 18px;
+        font-size: 16px;
         height: auto;
     }
     .hero {
@@ -205,20 +205,20 @@ nav, .hero {
     }
 
     .hero h1 {
-        font-size: 48px;
+        font-size: 42px;
         line-height: 1.2;
     }
 
     .hero p {
-        margin-top: 72px;
-        font-size: 18px; 
+        margin-top: 42px;
+        font-size: 16px; 
     }
 
     .cta-container {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-        margin-top: 24px;
+        margin-top: 12px;
     }
 
     .hero .cta-text {
@@ -227,9 +227,9 @@ nav, .hero {
 
     }
     .cta-container button {
-        width: 15rem; 
-        height: 4rem;
-        font-size: 20px;
+        width: 13rem;
+        height: 3rem;
+        font-size: 18px;
 
     }
 
