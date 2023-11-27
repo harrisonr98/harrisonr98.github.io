@@ -213,7 +213,7 @@ nav, .hero {
     }
 
     .hero p {
-        margin-top: 7rem;
+        margin-top: 5rem;
         font-size: 1.3rem;
     }
 
@@ -227,7 +227,7 @@ nav, .hero {
         width: 80%;
     }
     .cta-container button {
-        font-size: 1rem;
+        font-size: 1.3rem;
         width: 13rem;
         height: 4.5rem;
     }
@@ -235,3 +235,11 @@ nav, .hero {
 }
 
 
+/* Tablet or in-between mobile and desktop styles */
+@media (min-width: 769px) and (max-width: 1440px) {
+
+    .hero h1{
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+}
