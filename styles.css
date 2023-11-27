@@ -205,12 +205,12 @@ nav, .hero {
     }
 
     .hero h1 {
-        font-size: 42px;
+        font-size: 36px;
         line-height: 1.2;
     }
 
     .hero p {
-        margin-top: 42px;
+        margin-top: 24px;
         font-size: 16px; 
     }
 
