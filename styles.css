@@ -73,20 +73,20 @@ align-items: center;
 }
 
 .hero p {
-    font-size: 2vw;
+    font-size: 2rem;
     font-weight: 400;
     margin-top: 56px;
-    margin-bottom: 1vh;
+    margin-bottom: 1rem;
 }
 
 
 .hero h1 {
-    font-size: 6vw;
+    font-size: 6rem;
     margin: 0;
     line-height: 1.1;
     font-weight: 900;
     width: 70%;
-    margin-bottom: 5vh;
+    margin-bottom: 3rem;
 }
 
 .cta-container {
@@ -94,13 +94,13 @@ align-items: center;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 5vh;
+    gap: 2rem;
     width: 70%; 
 }
 
 .hero .cta-text {
     flex: 1;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     width: 50%;
     margin: 0 0;
     font-weight: 400;
@@ -112,8 +112,8 @@ align-items: center;
     color: #ffffff; 
     padding: 0.75rem 2rem;
     font-size: 24px;
-    font-weight: 400;
-    border: 1px solid #ffffff;
+    font-weight: bold;
+    border: 2px solid #ffffff;
     border-radius: 50px; 
     cursor: pointer;
     width: auto;
@@ -125,12 +125,12 @@ align-items: center;
     background-color: #fff;
     color: #000;
     border: none;
-    font-size: 1.4vw;
+    font-size: 1.5rem;
     font-weight: bold;
     border-radius: 50px;
     cursor: pointer;
-    width: 15vw;
-    height: 4vw;
+    width: 15rem;
+    height: 5rem;
 }
 
 /* ---- stats.js ---- */
@@ -190,7 +190,7 @@ nav, .hero {
     }
 
     .navbar-left {
-        font-size: 5vw;
+        font-size: 1.5rem;
     }
 
 
@@ -200,34 +200,30 @@ nav, .hero {
     }
 
     #hamburger-menu {
-        font-size: 5vw;
+        font-size: 1.5rem;
     }
     .hero {
         padding: 1rem;
     }
 
     .hero h1 {
-        font-size: 11vw;
+        font-size: 4rem;
         width: 100%;
-        margin-bottom: 3vh;
     }
 
     .hero p {
-        font-size: 4vw;
+        font-size: 1.5rem;
     }
 
     .hero .cta-text {
-        font-size: 4vw;
+        font-size: 1.5rem;
         width: 100%;
     }
 
-    .cta-container {
-        gap: 3vh;
-    }
     .cta-container button {
-        font-size: 4vw;
-        width: 40vw;
-        height: 10vw;
+        font-size: 1.5rem;
+        width: 15rem;
+        height: 5rem;
     }
 
 }
