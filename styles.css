@@ -75,7 +75,7 @@ align-items: center;
 .hero p {
     font-size: 2rem;
     font-weight: 400;
-    margin-top: 56px;
+    margin-top: 4rem;
     margin-bottom: 1rem;
 }
 
@@ -209,9 +209,11 @@ nav, .hero {
     .hero h1 {
         font-size: 3rem;
         width: 100%;
+        margin-bottom: 2rem;
     }
 
     .hero p {
+        margin-top: 3rem;
         font-size: 1.3rem;
     }
 
@@ -220,10 +222,13 @@ nav, .hero {
         width: 100%;
     }
 
+    .cta-container {
+        gap: 1rem;
+    }
     .cta-container button {
-        font-size: 1.5rem;
-        width: 15rem;
-        height: 5rem;
+        font-size: 1.2rem;
+        width: 13rem;
+        height: 4.5rem;
     }
 
 }
