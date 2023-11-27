@@ -21,7 +21,7 @@ canvas {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    z-index: -1; /* Ensure it's behind other content */
+    z-index: 1; /* Ensure it's behind other content */
 }
 
 
@@ -68,8 +68,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-
-
 }
 
 .hero p {
@@ -91,17 +89,18 @@ align-items: center;
 
 .cta-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2rem;
     width: 70%; 
+    margin-bottom: 2rem;
 }
 
 .hero .cta-text {
     flex: 1;
     font-size: 1.5rem;
-    width: 50%;
+    width: 35%;
     margin: 0 0;
     font-weight: 400;
 }
@@ -121,7 +120,21 @@ align-items: center;
 }
 
 
-.cta-container button {
+
+
+.cta-container #Resume {
+    background-color: #ff000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 15rem;
+    height: 5rem;
+}
+
+.cta-container #Portfolio {
     background-color: #fff;
     color: #000;
     border: none;
@@ -226,12 +239,19 @@ nav, .hero {
         gap: 8rem;
         width: 80%;
     }
+
+
     .cta-container button {
         font-size: 1.3rem;
         width: 13rem;
         height: 4.5rem;
     }
 
+    .cta-container {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 5rem;
+    }
 }
 
 
@@ -242,4 +262,12 @@ nav, .hero {
         font-size: 4rem;
         margin-bottom: 2rem;
     }
+
+    
+    .cta-container {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 5rem;
+    }
+
 }
