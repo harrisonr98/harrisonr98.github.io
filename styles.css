@@ -1,0 +1,316 @@
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font-family: Satoshi, sans-serif;
+    background: #000; /* Ensuring background compatibility */
+    color: #fff; /* Default text color */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 1;
+}
+
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2; /* Higher than the particles.js z-index */
+    position: relative;
+    width: 95%;  
+    margin-top: 1.5rem;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    font-size: 28px; /* Adjust size as needed */
+    font-weight: 500;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    z-index: 2; /* Above particles */
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+   
+}
+
+.content {
+width: 70%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.hero p {
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 56px;
+    margin-bottom: 12px;
+}
+
+
+.hero h1 {
+    font-size: 120px;
+    margin: 0;
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    gap: 3rem;
+    width: 100%; 
+}
+
+.hero .cta-text {
+    flex: 1;
+    font-size: 24px;
+    width: 50%;
+    margin: 0 0;
+    font-weight: 400;
+}
+
+/* ---- Button Styles ---- */
+#contact-me, #hamburger-menu {
+    background-color: #00000000; 
+    color: #ffffff; 
+    padding: 0.75rem 2rem;
+    font-size: 24px;
+    font-weight: 400;
+    border: 1px solid #ffffff;
+    border-radius: 50px; 
+    cursor: pointer;
+    width: auto;
+    height: 4rem;
+}
+
+
+.cta-container button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 20rem;
+    height: 5rem;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    z-index: 2; /* Above particles */
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats, .count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+
+/* Apply pointer-events: none to all text elements over the canvas */
+nav span, .hero p, .hero h1, #contact-me {
+    pointer-events: none;
+}
+
+nav, .hero {
+    pointer-events: none;
+}
+
+#contact-me, .hero button {
+    pointer-events: auto;
+}
+
+
+/* mobile styles */
+@media (max-width: 768px) {
+
+    nav {
+        margin-top: 1rem;
+    }
+    .navbar-left, .navbar-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #contact-me {
+        display: none;
+    }
+
+    #hamburger-menu {
+        font-size: 16px;
+        height: auto;
+    }
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 56px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        margin-top: 72px;
+        font-size: 18px; 
+    }
+
+    .cta-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 24px;
+    }
+
+    .hero .cta-text {
+        width: 80%;
+        font-size: 16px;
+
+    }
+    .cta-container button {
+        width: 15rem; 
+        height: 4rem;
+        font-size: 20px;
+
+    }
+
+    .content {
+        width: 100%; 
+    }
+}
+
+
+/* Styles for screens larger than mobile but smaller than typical desktops */
+@media (min-width: 769px) and (max-width: 1023px) {
+    nav {
+        margin-top: 0.75rem;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .cta-container button {
+        width: 15rem;
+        font-size: 22px;
+        height: 4.5rem;
+    }
+
+    .content {
+        width: 85%; /* Adjust width for content area */
+    }
+
+}
+
+
+/* Styles for typical desktop */
+@media (min-width: 1024px) and (max-width: 1900px) {
+    nav {
+        margin-top: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 80px;
+    }
+
+    .hero p {
+        font-size: 22px;
+    }
+
+    .cta-container button {
+        width: 15rem;
+        font-size: 24px;
+    }
+}
+
+/* Styles for screens with a height smaller than 800px */
+@media (max-height: 800px) {
+    nav {
+        margin-top: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 46px; 
+    }
+
+
+    .cta-container {
+        margin-top: 24px;
+        gap: 1.5rem;
+    }
+    .cta-container button {
+        width: 18rem;
+        height: 4.5rem;
+        font-size: 24px; 
+
+    }
+
+    .content {
+        width: 75%; 
+    }
+
+}
