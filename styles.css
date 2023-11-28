@@ -4,6 +4,7 @@ body {
     background: #000; /* Ensuring background compatibility */
     color: #fff; /* Default text color */
     overflow-x: hidden; /* Hide horizontal scrollbar */
+    overscroll-behavior: none;
 }
 
 canvas {
