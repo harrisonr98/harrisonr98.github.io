@@ -5,6 +5,8 @@ body {
     color: #fff; /* Default text color */
     overflow-x: hidden; /* Hide horizontal scrollbar */
     overscroll-behavior: none;
+    -webkit-overscroll-behavior: none; /* For older WebKit-based browsers */
+
 }
 
 canvas {
